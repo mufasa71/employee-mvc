@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="869D98FF-7DDA-4DD4-8715-7369CCD874A4" ModuleId="EmployesManagement.UnitTests" />
+  <Module PersistentId="4302B266-F7B5-4728-85FF-D02260D56AA4" ModuleId="EmployesManagement.Domain" />
+  <Module PersistentId="D8167465-866F-4B0C-A602-3B616E2DD142" ModuleId="EmployesManagement.WebUI" />
+</Modules>

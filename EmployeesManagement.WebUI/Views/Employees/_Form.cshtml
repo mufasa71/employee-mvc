@@ -1,0 +1,7 @@
+﻿@using(Html.BeginForm()) {
+    @Html.EditorForModel()
+    <input type="submit" value="Save" />
+}
+<div>
+    @Html.ActionLink("Back to List", "Index", "Employees")
+</div>
