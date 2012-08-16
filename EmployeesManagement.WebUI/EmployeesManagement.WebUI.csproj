@@ -77,6 +77,9 @@
     <Compile Include="HtmlHelpers\HtmlButtonExtension.cs" />
     <Compile Include="HtmlHelpers\PagingHelpers.cs" />
     <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
+    <Compile Include="Infrastructure\ReportFileResult.cs" />
+    <Compile Include="Infrastructure\ReportGenerator.cs" />
+    <Compile Include="Infrastructure\TaxHandler.cs" />
     <Compile Include="Models\EmployeesListViewModel.cs" />
     <Compile Include="Models\AbstractPagingDecorator.cs" />
     <Compile Include="Models\PagingInfo.cs" />

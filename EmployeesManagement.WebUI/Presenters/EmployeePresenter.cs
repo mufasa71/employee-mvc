@@ -1,4 +1,5 @@
 ﻿using EmployeesManagement.Domain.Entities;
+using EmployeesManagement.WebUI.Infrastructure;
 
 namespace EmployeesManagement.WebUI.Presenters
 {
@@ -18,6 +19,12 @@ namespace EmployeesManagement.WebUI.Presenters
 
         public string Salary {
             get { return "$ " + _employee.Salary; }
+        }
+
+        public double Tax { get { return new ConcreteTaxHandler().HandleTax(_employee.Salary); } }
+
+        public string SalaryIncludeTax {
+            get { return "$ " + (_employee.Salary - ((_employee.Salary * Tax) / 100)); }
         }
     }
 }

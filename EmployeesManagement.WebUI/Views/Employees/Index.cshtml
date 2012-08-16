@@ -5,11 +5,14 @@
 <div class="inner">
     <h4>List of employees</h4>
     @Html.Button("Create new employee", "Create", new { @class = "small green" })
+            
     @Html.Partial("_EmployeeFilter", "All")
     <div id="loading" style="display:none; color:Red; font-weight: bold"> 
         <p>Loading Data...</p> 
     </div>
     <div id="employees_data">
         @Html.Action("EmployeeData")
+        
     </div>
+    <p>@Html.Button("Download report", "Download", new { @class = "small blue" })</p>
 </div>

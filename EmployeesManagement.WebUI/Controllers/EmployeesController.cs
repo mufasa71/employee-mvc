@@ -3,6 +3,7 @@ using System.Linq;
 using EmployeesManagement.Domain.Abstract;
 using EmployeesManagement.Domain.Entities;
 using EmployeesManagement.WebUI.Filters;
+using EmployeesManagement.WebUI.Infrastructure;
 using EmployeesManagement.WebUI.Models;
 
 namespace EmployeesManagement.WebUI.Controllers
@@ -10,7 +11,7 @@ namespace EmployeesManagement.WebUI.Controllers
     public class EmployeesController : Controller
     {
         private readonly IEmployeeRepository _repository;
-        public int PageSize = 4;
+        public int PageSize = 10;
 
         public EmployeesController(IEmployeeRepository employeeRepository) {
             _repository = employeeRepository;
@@ -82,6 +83,15 @@ namespace EmployeesManagement.WebUI.Controllers
                 return HttpNotFound();
             }
             return RedirectToAction("Index");
+        }
+
+        public ReportFileResult Download() {
+            var reportGenerator = new ReportGenerator(_repository.Employees);
+            return ReportResult(reportGenerator.getReport(), "text/plain", "myfile.txt");
+        }
+
+        protected internal ReportFileResult ReportResult(string content, string contentType, string downloadFileName) {
+            return new ReportFileResult(content, contentType, downloadFileName);
         }
     }
 }

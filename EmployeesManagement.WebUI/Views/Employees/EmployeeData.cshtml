@@ -24,4 +24,6 @@
     </tbody>
 </table>
 @*@Html.PageLinks(Model.PagingInfo, x => Url.Action("Index", new { page = x }))*@
-@Ajax.AjaxPageLinks(Model.PagingInfo, x => Url.Action("EmployeeData", new { page = x}))
+@if (Model.PagingInfo.TotalPages > 1) {
+    @Ajax.AjaxPageLinks(Model.PagingInfo, x => Url.Action("EmployeeData", new {page = x}))
+}

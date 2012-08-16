@@ -37,7 +37,7 @@ namespace EmployeesManagement.UnitTests.Controllers
             Assert.IsInstanceOf(typeof(EmployeesListViewModel), viewResult.Model, "Wrong view model");
             var employeeEntries = viewResult.ViewData.Model as EmployeesListViewModel;
             Assert.IsNotNull(employeeEntries, "Employees entries is null");
-            Assert.AreEqual(4, employeeEntries.Employees.Count(), "Got wrong number of employees");
+            Assert.AreEqual(5, employeeEntries.Employees.Count(), "Got wrong number of employees");
             var employee1 = employeeEntries.Employees.ToArray()[0];
             Assert.AreEqual(Name1, employee1.Name);
             Assert.AreEqual(Salary1, employee1.Salary);
