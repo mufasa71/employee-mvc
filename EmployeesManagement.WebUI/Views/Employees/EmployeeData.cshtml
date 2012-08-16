@@ -1,0 +1,27 @@
+﻿@model EmployeesManagement.WebUI.Models.EmployeesListViewModel
+@{
+    Layout = null;
+}
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Active</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model.Employees) {
+            var presenter = new EmployeePresenter(e);
+            <tr>
+                <td>@presenter.Name</td>
+                <td>@presenter.Salary</td>
+                <td>@presenter.Active</td>
+                <td>@Html.Partial("_Actions", e)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@*@Html.PageLinks(Model.PagingInfo, x => Url.Action("Index", new { page = x }))*@
+@Ajax.AjaxPageLinks(Model.PagingInfo, x => Url.Action("EmployeeData", new { page = x}))

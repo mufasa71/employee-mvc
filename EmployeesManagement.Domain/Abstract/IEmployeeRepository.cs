@@ -8,5 +8,6 @@ namespace EmployeesManagement.Domain.Abstract // Code to interfaces not to imple
     {
         IQueryable<Employee> Employees { get; set; }
         void SaveEmployee(Employee employee);
+        void DeleteEmployee(Employee employee);
     }
 }

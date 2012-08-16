@@ -1,33 +1,15 @@
-﻿@model EmployeesManagement.WebUI.Models.EmployeesListViewModel
-           
-@{
+﻿@{
     ViewBag.Title = "Employees";
+    
 }
 <div class="inner">
     <h4>List of employees</h4>
     @Html.Button("Create new employee", "Create", new { @class = "small green" })
-    <table class="striped">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Salary</th>
-                <th>Active</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var e in Model.Employees) {
-                <tr>
-                    <td>@e.Name</td>
-                    <td>@e.Salary.ToString("c")</td>
-                    <td>@e.IsActive</td>
-                    <td>
-                        <a href="@Url.Action("Edit", new { EmployeeId = e.EmployeeId })"><span class="icon gray" data-icon="7" style="display: inline-block;"></span></a>
-                        <a href=""><span class="icon gray" data-icon="m" style="display: inline-block;"></span></a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-    @Html.PageLinks(Model.PagingInfo, x => Url.Action("Index", new {page = x}))
+    @Html.Partial("_EmployeeFilter", "All")
+    <div id="loading" style="display:none; color:Red; font-weight: bold"> 
+        <p>Loading Data...</p> 
+    </div>
+    <div id="employees_data">
+        @Html.Action("EmployeeData")
+    </div>
 </div>

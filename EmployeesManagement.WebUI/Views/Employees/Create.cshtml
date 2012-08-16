@@ -6,4 +6,8 @@
 
 <h4>Create Employee</h4>
 
-@Html.Partial("_Form")
+@using(Html.BeginForm("Create", "Employees", FormMethod.Post, new { @class = ""})) {
+    @Html.EditorForModel()
+    <input type="submit" value="Create" />
+    @Html.ActionLink("Back to List", "Index", "Employees")
+}

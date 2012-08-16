@@ -1,4 +1,5 @@
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+<<<<<<< HEAD
 
 bin
 
@@ -9,4 +10,10 @@ obj
 # mstest
 test
 esults
+=======
+bin
+obj
+
+# mstest test results
+>>>>>>> 4a869b22b20a2caef7bff4e7d813ff0064b71b1c
 TestResults

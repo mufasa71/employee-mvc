@@ -18,12 +18,20 @@ namespace EmployeesManagement.WebUI
 
             routes.MapRoute(
                 null,
-                "Page{page}",
-                new { controller = "Employees", action = "Index" });
+                "{filter}/Page{page}",
+                new { controller = "Employees", action = "EmployeeData" });
+            routes.MapRoute(
+                null,
+                "Employees/Create",
+                new { controller = "Employees", action = "Create" });
+            routes.MapRoute(
+                null,
+                "Employees/Edit/{EmployeeId}",
+                new { controller = "Employees", action = "Edit"});
             routes.MapRoute(
                 "Default", // Route name
-                "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Employees", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                "{controller}/{action}", // URL with parameters
+                new { controller = "Employees", action = "Index" } // Parameter defaults
             );
         }
 

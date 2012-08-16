@@ -1,0 +1,19 @@
+﻿@model EmployeesManagement.Domain.Entities.Employee
+<fieldset>
+    <legend>Employee Details</legend>
+    <p class = "editor-field">
+        @Html.LabelFor(e => e.Name)
+        @Html.EditorFor(e => e.Name, new { @class = "text-box" })
+        @Html.ValidationMessageFor(e => e.Name)
+    </p>
+    <p class = "editor-field">
+       
+        @Html.LabelFor(e => e.Salary)
+        @Html.EditorFor(e => e.Salary, new {@class = "text-box"})
+        @Html.ValidationMessageFor(e => e.Salary)
+    </p>
+    <p class = "editor-field">
+        @Html.LabelFor(e => e.IsActive)
+        @Html.EditorFor(e => e.IsActive, new {@class = "text-box"})
+    </p>
+</fieldset>

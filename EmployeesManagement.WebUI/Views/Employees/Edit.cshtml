@@ -6,4 +6,8 @@
 
 <h4>Edit @Model.Name</h4>
 
-@Html.Partial("_Form")
+@using(Html.BeginForm("Edit", "Employees", FormMethod.Post, new { @class = ""})) {
+    @Html.EditorForModel()
+    <input type="submit" value="Update" />
+    @Html.ActionLink("Back to List", "Index", "Employees")
+}

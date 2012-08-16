@@ -1,35 +1,35 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/f:packages.config" caret="0" fromTop="0" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Infrastructure/f:NinjectControllerFactory.cs" caret="1252" fromTop="23" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:jquery.fancybox-1.3.4.css" caret="0" fromTop="0" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:chosen.css" caret="0" fromTop="0" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:prettify.css" caret="0" fromTop="0" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:tiptip.css" caret="0" fromTop="0" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Models/f:PagingInfo.cs" caret="0" fromTop="0" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Models/f:AbstractPagingDecorator.cs" caret="0" fromTop="0" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/f:style.css" caret="1705" fromTop="7" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:kickstart.css" caret="533" fromTop="18" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:kickstart-buttons.css" caret="6254" fromTop="31" />
     <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/d:HtmlHelpers/f:PagingHelperTest.cs" caret="1050" fromTop="22" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Models/f:PagingDecorator.cs" caret="0" fromTop="0" />
-    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Abstract/f:IEmployeeRepository.cs" caret="390" fromTop="9" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:style.css" caret="4854" fromTop="20" />
-    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Concrete/f:EFDbContext.cs" caret="0" fromTop="0" />
-    <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/d:Controllers/f:EmployeesControllerTest.cs" caret="4677" fromTop="59" />
-    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Entities/f:Employee.cs" caret="511" fromTop="12" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Shared/f:_Layout.cshtml" caret="1161" fromTop="16" />
-    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Concrete/f:EFEmployeeRepository.cs" caret="492" fromTop="16" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/f:Web.config" caret="1365" fromTop="22" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/f:Web.config" caret="1257" fromTop="18" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:HtmlHelpers/f:PagingHelpers.cs" caret="0" fromTop="0" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:HtmlHelpers/f:HtmlButtonExtension.cs" caret="800" fromTop="17" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/f:Global.asax.cs" caret="1061" fromTop="27" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Controllers/f:EmployeesController.cs" caret="1517" fromTop="8" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:_Form.cshtml" caret="176" fromTop="7" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:Edit.cshtml" caret="147" fromTop="8" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:Create.cshtml" caret="98" fromTop="6" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:Index.cshtml" caret="607" fromTop="20" />
+    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Abstract/f:IEmployeeRepository.cs" caret="439" fromTop="10" />
+    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Concrete/f:EFEmployeeRepository.cs" caret="0" fromTop="0" />
+    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Concrete/f:EFDbContext.cs" caret="0" fromTop="0" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:HtmlHelpers/f:HtmlButtonExtension.cs" caret="1839" fromTop="28" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/f:Web.config" caret="1267" fromTop="16" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Presenters/f:EmployeePresenter.cs" caret="527" fromTop="19" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:_Actions.cshtml" caret="230" fromTop="2" />
+    <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/d:Routes/f:RoutesTest.cs" caret="628" fromTop="11" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/f:Global.asax.cs" caret="911" fromTop="13" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Controllers/f:EmployeesController.cs" caret="2995" fromTop="35" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:kickstart-forms.css" caret="9131" fromTop="18" />
+    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Entities/f:Employee.cs" caret="698" fromTop="18" />
+    <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/d:Controllers/f:EmployeesControllerTest.cs" caret="7072" fromTop="53" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Shared/d:EditorTemplates/f:Employee.cshtml" caret="0" fromTop="0" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:style.css" caret="3280" fromTop="24" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:_Form.cshtml" caret="0" fromTop="0" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/f:style.css" caret="466" fromTop="17" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/f:Web.config" caret="758" fromTop="14" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Shared/f:_Layout.cshtml" caret="1395" fromTop="22" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Shared/f:_EmployeeFilter.cshtml" caret="437" fromTop="9" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:Index.cshtml" caret="314" fromTop="8" />
   </RecentFiles>
   <RecentEdits>
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Models/f:AbstractPagingDecorator.cs" caret="224" fromTop="8" />
@@ -39,18 +39,25 @@
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:HtmlHelpers/f:PagingHelpers.cs" caret="1818" fromTop="17" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:kickstart-buttons.css" caret="6250" fromTop="32" />
     <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/d:HtmlHelpers/f:PagingHelperTest.cs" caret="1050" fromTop="22" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:style.css" caret="4854" fromTop="20" />
-    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Abstract/f:IEmployeeRepository.cs" caret="390" fromTop="9" />
-    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Concrete/f:EFEmployeeRepository.cs" caret="668" fromTop="21" />
-    <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/d:Controllers/f:EmployeesControllerTest.cs" caret="5288" fromTop="26" />
-    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Entities/f:Employee.cs" caret="538" fromTop="12" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Shared/f:_Layout.cshtml" caret="539" fromTop="10" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:HtmlHelpers/f:HtmlButtonExtension.cs" caret="800" fromTop="17" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:Index.cshtml" caret="221" fromTop="7" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/f:Global.asax.cs" caret="1061" fromTop="18" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Controllers/f:EmployeesController.cs" caret="1520" fromTop="8" />
-    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:_Form.cshtml" caret="0" fromTop="0" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:Create.cshtml" caret="98" fromTop="6" />
     <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:Edit.cshtml" caret="105" fromTop="6" />
+    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Abstract/f:IEmployeeRepository.cs" caret="437" fromTop="10" />
+    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Concrete/f:EFEmployeeRepository.cs" caret="290" fromTop="9" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Controllers/f:EmployeesController.cs" caret="3143" fromTop="21" />
+    <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/d:Controllers/f:EmployeesControllerTest.cs" caret="7408" fromTop="22" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:HtmlHelpers/f:HtmlButtonExtension.cs" caret="1839" fromTop="25" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/f:Web.config" caret="1267" fromTop="16" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Presenters/f:EmployeePresenter.cs" caret="527" fromTop="19" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:_Actions.cshtml" caret="308" fromTop="2" />
+    <File id="869D98FF-7DDA-4DD4-8715-7369CCD874A4/d:Routes/f:RoutesTest.cs" caret="628" fromTop="11" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/f:Global.asax.cs" caret="911" fromTop="13" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:_Form.cshtml" caret="160" fromTop="3" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Shared/d:EditorTemplates/f:Employee.cshtml" caret="644" fromTop="16" />
+    <File id="4302B266-F7B5-4728-85FF-D02260D56AA4/d:Entities/f:Employee.cs" caret="517" fromTop="14" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Content/d:css/f:style.css" caret="3280" fromTop="24" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/f:Web.config" caret="758" fromTop="14" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Shared/f:_Layout.cshtml" caret="641" fromTop="11" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Shared/f:_EmployeeFilter.cshtml" caret="426" fromTop="8" />
+    <File id="D8167465-866F-4B0C-A602-3B616E2DD142/d:Views/d:Employees/f:Index.cshtml" caret="346" fromTop="9" />
   </RecentEdits>
 </RecentFiles>

@@ -93,4 +93,13 @@ left:0;
 	border-radius:3px;
 	}
 	
+#employee-filter {
+    margin: 10px 0px 10px 0px;
+}
+
+#employee-filter label 
+{
+    margin-right: 10px;
+}
+	
 	

@@ -1,0 +1,3 @@
+﻿@model EmployeesManagement.Domain.Entities.Employee
+<a href="@Url.Action("Edit", new { EmployeeId = Model.EmployeeId })"><span class="icon gray" data-icon="7" style="display: inline-block;"></span></a>
+@Html.DeleteButton("", "Delete", new { @class = "icon gray", data_icon = "m" }, new { EmployeeId = Model.EmployeeId })

@@ -2,6 +2,7 @@
 using System.Linq;
 using EmployeesManagement.Domain.Abstract;
 using EmployeesManagement.Domain.Entities;
+using EmployeesManagement.WebUI.Filters;
 using EmployeesManagement.WebUI.Models;
 
 namespace EmployeesManagement.WebUI.Controllers
@@ -15,33 +16,36 @@ namespace EmployeesManagement.WebUI.Controllers
             _repository = employeeRepository;
         }
 
-        //
-        // GET: /Employees/
+        public ViewResult Index() {
+            return View("Index");
+        }
 
-        public ActionResult Index(int page = 1) {
-            var viewModel = new EmployeesListViewModel
+        public ViewResult EmployeeData(string filter = "All", int page = 1) {
+            var employeeFilters = new EmployeeFilters();
+            var predicate = employeeFilters.HandleRequest(filter);
+            var employees =
+                _repository.Employees.OrderBy(e => e.EmployeeId).Where(predicate);
+            var viewModel = new EmployeesListViewModel()
                                 {
-                                    Employees =
-                                        _repository.Employees.OrderBy(e => e.EmployeeId).Skip((page - 1) * PageSize).Take(
-                                            PageSize),
-                                    PagingInfo = new PagingInfo
-                                                     {
-                                                         CurrentPage = page,
-                                                         ItemsPerPage = PageSize,
-                                                         TotalItems = _repository.Employees.Count()
-                                                     }
+                                    Employees = employees.Skip((page - 1) * PageSize).Take(PageSize),
+                                    PagingInfo =
+                                        new PagingInfo { CurrentPage = page, ItemsPerPage = PageSize, TotalItems = employees.Count(), Filter = filter }
                                 };
             return View(viewModel);
         }
 
-        public ActionResult Create() {
-            return View(new Employee());
+        public ViewResult Create() {
+            return View("Create", new Employee());
         }
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection) {
+        public ActionResult Create(Employee employee) {
             try {
-                //TODO Add insert logic
+                if (!ModelState.IsValid) {
+                    return View("Create", employee);
+                }
+                _repository.SaveEmployee(employee);
+                TempData["message"] = string.Format("{0} has been saved", employee.Name);
                 return RedirectToAction("Index");
             }
             catch {
@@ -51,7 +55,7 @@ namespace EmployeesManagement.WebUI.Controllers
 
         public ActionResult Edit(int employeeId = 0) {
             var employee = _repository.Employees.FirstOrDefault(e => e.EmployeeId == employeeId);
-            if(employee == null) {
+            if (employee == null) {
                 return HttpNotFound();
             }
             return View(employee);
@@ -68,14 +72,16 @@ namespace EmployeesManagement.WebUI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection) {
-            try {
-                // TODO: Add delete behavior
-                return RedirectToAction("Index");
+        public ActionResult Delete(int employeeId) {
+            var employee = _repository.Employees.FirstOrDefault(p => p.EmployeeId == employeeId);
+            if (employee != null) {
+                _repository.DeleteEmployee(employee);
+                TempData["message"] = string.Format("{0} was deleted", employee.Name);
             }
-            catch {
-                return View();
+            else {
+                return HttpNotFound();
             }
+            return RedirectToAction("Index");
         }
     }
 }

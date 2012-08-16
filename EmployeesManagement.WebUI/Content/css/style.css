@@ -64,8 +64,9 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
+#employee-filter {
 
-
+}
 
 
 
@@ -102,7 +103,9 @@ td { vertical-align: top; }
   h2, h3 { page-break-after: avoid; }
 }
 
-.editor-field { margin-bottom: .8em; } 
+.editor-field { padding-bottom: .8em;margin-left: 1em;padding-top: 1em;} 
 .editor-label { font-weight: bold; } 
 .editor-label:after { content: ":" } 
-.text-box { width: 25em; }
+.text-box { width: 20em;margin-left: 1em;}
+.field-validation-error{color: red;  font-size: 12px;}
+.input-validation-error{border:1px solid red;}

@@ -1,0 +1,11 @@
+﻿@model string
+@{
+    var ajaxOptions = new AjaxOptions { UpdateTargetId = "employees_data", Url = Url.Action("EmployeeData", "Employees"), HttpMethod = "GET", OnSuccess = "doKickstart"};
+}
+<div id="employee-filter">
+    @using(Ajax.BeginForm(ajaxOptions)){
+        @Html.Label("Filter")
+        @Html.DropDownList("filter", new SelectList(new[] {"All", "Active", "Deactive"}, (Model ?? "All")), new {@class = "fancy"})
+        <button type="submit" class="small" >Apply</button> 
+    }
+</div>
