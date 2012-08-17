@@ -40,5 +40,8 @@ Please make sure that connection string is compatible with yours environment.
   </connectionStrings>
 ```
  
+### Screenshots
+![Index page](/Screenshots/IndexPage.png "Index page")
+![Edit page](/Screenshots/EditPage.png "Edit page")
 
 
