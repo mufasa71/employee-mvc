@@ -42,6 +42,6 @@ Please make sure that connection string is compatible with yours environment.
  
 ### Screenshots
 ![Index page](https://github.com/mukimov/employee-mvc/raw/master/Screenshots/IndexPage.png "Index page")
-![Edit page](https://github.com/mukimov/employee-mvc/raw/master/Screenshots/EditPage.png "Edit page")
+![NUnit Tests](https://github.com/mukimov/employee-mvc/raw/master/Screenshots/NUnitTests.png "NUnit tests")
 
 
