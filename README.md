@@ -41,7 +41,9 @@ Please make sure that connection string is compatible with yours environment.
 ```
  
 ### Screenshots
-![Index page](/mukimov/employee-mvc/Screenshots/IndexPage.png "Index page")
-![Edit page](/mukimov/employee-mvc/Screenshots/EditPage.png "Edit page")
+![Index page](https://github.com/mukimov/employee-mvc/raw/master/Screenshots/IndexPage.png "Index page")
+![Edit page](https://github.com/mukimov/employee-mvc/raw/master/Screenshots/EditPage.png "Edit page")
+
+Screenshots/IndexPage.png
 
 
