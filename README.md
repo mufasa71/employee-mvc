@@ -22,6 +22,13 @@ EMS works with
 * Microsoft C#
 * Microsoft SQL Server 2008 v10
 * Microsoft Visual Studio 2010
+* Kickstarter Ultra–Lean HTML Building Blocks for Rapid Website Production
+* HTML5 Boilerplate
+
+TDD and tests are working with
+* Dependency Injection Ninject
+* Moq
+* NUnit
 
 To start using EMS execute in Database\employees_management_sql_query.sql SQL script
 
