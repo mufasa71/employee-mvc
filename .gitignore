@@ -4,12 +4,8 @@
 bin
 
 obj
-*.js
 
-
-# mstest
-test
-esults
+# mstestts
 =======
 bin
 obj
